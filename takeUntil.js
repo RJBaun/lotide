@@ -1,6 +1,6 @@
 const takeUntil = function(array, callback) {
   // define new array to push items into
-  newArr = [];
+  const newArr = [];
   // loop through array
   for (const item of array) {
     // check if item meets callback
