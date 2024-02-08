@@ -3,9 +3,9 @@ const eqObjects = function(object1, object2) {
     return false;
   } else {
     for (const key in object1) {
-      if (object1[key] !== object2[key]) {
-        if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-          if (!eqArrays(object1[key], object2[key])) {
+      if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
+        if (!eqArrays(object1[key], object2[key])) {
+          if (object1[key] !== object2[key]) {
             return false;
           }
         }
@@ -39,3 +39,4 @@ const assertObjectsEqual = function(actual, expected) {
 
 assertObjectsEqual({a: '1', b: '2'}, {a: '1', b: '2'});
 assertObjectsEqual({a: '1', b: '2'}, {a: '1', b: '2', c: '3'});
+assertObjectsEqual({a: '1', b: '2', c: [1, 2, 3]}, {a: '1', b: '2', c: [1, 2, 3]});
