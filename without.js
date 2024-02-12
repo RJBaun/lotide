@@ -30,3 +30,4 @@ const without = function(source, itemsToRemove) {
 };
 
 console.log(without([1, 2, 3], [1, 2]));
+module.exports = without;

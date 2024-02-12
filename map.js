@@ -37,3 +37,5 @@ const eqArrays = function(arr1, arr2) {
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']);
 assertArraysEqual(map(beers, beer => beer.length), [3, 3, 3, 5]);
 assertArraysEqual(map(temperatures, temperature => temperature - 10), [10, 23, 5, 17, 25]);
+
+module.exports = map;

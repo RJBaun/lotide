@@ -21,3 +21,4 @@ const countLetters = function(string) {
 let result1 = countLetters('aaabbc');
 
 assertEqual(result1['a'], 3);
+module.exports = countLetters;

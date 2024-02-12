@@ -47,3 +47,5 @@ assertArraysEqual(takeUntil(test1, x => x % 4 === 0), [1, 2, 3]);
 assertArraysEqual(takeUntil(test2, x => x.length < 2), ['this', 'is']);
 // test for item type
 assertArraysEqual(takeUntil(test3, x => !Array.isArray(x)), ['this', 'is', 'a', 'test']);
+
+module.exports = takeUntil;
